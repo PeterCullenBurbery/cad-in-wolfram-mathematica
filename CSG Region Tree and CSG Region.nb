@@ -1,0 +1,3140 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    153194,       3130]
+NotebookOptionsPosition[    152435,       3109]
+NotebookOutlinePosition[    152835,       3125]
+CellTagsIndexPosition[    152792,       3122]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"CSGRegion", "[", 
+  RowBox[{"\"\<Difference\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Cylinder", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", 
+           RowBox[{"-", "15"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "15"}], "}"}]}], "}"}], ",", "10"}], 
+      "]"}], ",", 
+     RowBox[{"CSGRegion", "[", 
+      RowBox[{"\"\<Union\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cylinder", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "9"}], ",", 
+               RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "9"}], ",", "10", ",", "0"}], "}"}]}], "}"}], ",",
+            "5"}], "]"}], ",", 
+         RowBox[{"Cylinder", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"9", ",", 
+               RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"9", ",", "10", ",", "0"}], "}"}]}], "}"}], ",", "5"}], 
+          "]"}], ",", 
+         RowBox[{"Cuboid", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "12"}], ",", 
+             RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "4"}], ",", "10", ",", "10"}], "}"}]}], "]"}], ",", 
+         RowBox[{"Cuboid", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"12", ",", 
+             RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"4", ",", "10", ",", "10"}], "}"}]}], "]"}], ",", 
+         RowBox[{"Cylinder", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0", ",", 
+               RowBox[{"-", "8"}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0", ",", "16"}], "}"}]}], "}"}], ",", "8"}], 
+          "]"}], ",", 
+         RowBox[{"Cylinder", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0", ",", 
+               RowBox[{"-", "16"}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0", ",", "16"}], "}"}]}], "}"}], ",", "4"}], 
+          "]"}], ",", 
+         RowBox[{"Cylinder", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", 
+               RowBox[{"-", "14"}], ",", "8"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "14", ",", "8"}], "}"}]}], "}"}], ",", "2"}], 
+          "]"}], ",", 
+         RowBox[{"CSGRegion", "[", 
+          RowBox[{"\"\<Difference\>\"", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Cuboid", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"-", "11"}], ",", 
+                 RowBox[{"-", "12"}], ",", "8"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"11", ",", "12", ",", "18"}], "}"}]}], "]"}], ",", 
+             RowBox[{"Cylinder", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"0", ",", 
+                   RowBox[{"-", "14"}], ",", "8"}], "}"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{"0", ",", "14", ",", "8"}], "}"}]}], "}"}], ",", 
+               "4"}], "]"}]}], "}"}]}], "]"}]}], "}"}]}], "]"}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellLabel->
+  "In[151]:=",ExpressionUUID->"83fe3dfb-0562-4d1e-ab4b-ca5c7b01ade8"],
+
+Cell[BoxData[
+ Graphics3DBox[
+  TagBox[
+   DynamicModuleBox[{Typeset`region = HoldComplete[
+     CSGRegion["Difference", {
+       Cylinder[{{0, 0, -15}, {0, 0, 15}}, 10], 
+       CSGRegion["Union", {
+         Cylinder[{{-9, -10, 0}, {-9, 10, 0}}, 5], 
+         Cylinder[{{9, -10, 0}, {9, 10, 0}}, 5], 
+         Cuboid[{-12, -10, 0}, {-4, 10, 10}], 
+         Cuboid[{12, -10, 0}, {4, 10, 10}], 
+         Cylinder[{{0, 0, -8}, {0, 0, 16}}, 8], 
+         Cylinder[{{0, 0, -16}, {0, 0, 16}}, 4], 
+         Cylinder[{{0, -14, 8}, {0, 14, 8}}, 2], 
+         CSGRegion["Difference", {
+           Cuboid[{-11, -12, 8}, {11, 12, 18}], 
+           Cylinder[{{0, -14, 8}, {0, 14, 8}}, 4]}]}]}]]}, 
+    TagBox[GraphicsGroup3DBox[
+      {Texture[
+        NCache[{{{{
+             Rational[19, 65535], 
+             Rational[6, 21845], 0, 
+             Rational[2, 65535]}, {
+             Rational[1, 21845], 
+             Rational[1, 21845], 0., 0.}, {
+             Rational[1, 65535], 0, 
+             Rational[1, 65535], 
+             Rational[1, 13107]}, {
+             Rational[1, 65535], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[6, 21845], 
+             Rational[16, 65535], 
+             Rational[1, 65535], 
+             Rational[4, 65535]}, {
+             Rational[11, 65535], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[13, 65535], 
+             Rational[2, 21845], 
+             Rational[1, 21845], 
+             Rational[1, 13107]}, {
+             Rational[8, 65535], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[11, 65535], 
+             Rational[2, 65535], 
+             Rational[4, 65535], 
+             Rational[2, 21845]}, {
+             Rational[7, 65535], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[2, 65535], 0, 
+             Rational[1, 13107], 
+             Rational[1, 13107]}, {
+             Rational[2, 65535], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[1, 21845], 0, 
+             Rational[1, 13107], 
+             Rational[1, 13107]}, {
+             Rational[1, 21845], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[4, 21845], 
+             Rational[2, 65535], 
+             Rational[4, 65535], 
+             Rational[3, 21845]}, {
+             Rational[2, 13107], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[4, 65535], 0, 
+             Rational[8, 65535], 
+             Rational[4, 65535]}, {
+             Rational[4, 65535], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[1, 13107], 0, 
+             Rational[8, 65535], 
+             Rational[4, 65535]}, {
+             Rational[1, 13107], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[1, 3855], 
+             Rational[8, 65535], 
+             Rational[1, 21845], 
+             Rational[4, 21845]}, {
+             Rational[1, 4369], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[14, 65535], 
+             Rational[2, 65535], 
+             Rational[11, 65535], 
+             Rational[13, 65535]}, {
+             Rational[14, 65535], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[2, 21845], 0, 
+             Rational[4, 21845], 
+             Rational[1, 13107]}, {
+             Rational[2, 21845], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[7, 65535], 0, 
+             Rational[4, 21845], 
+             Rational[1, 13107]}, {
+             Rational[7, 65535], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[16, 65535], 
+             Rational[4, 65535], 
+             Rational[11, 65535], 
+             Rational[16, 65535]}, {
+             Rational[1, 3855], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[8, 65535], 0, 
+             Rational[1, 4369], 
+             Rational[1, 13107]}, {
+             Rational[8, 65535], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[1, 4369], 
+             Rational[2, 65535], 
+             Rational[1, 4369], 
+             Rational[6, 21845]}, {
+             Rational[19, 65535], 
+             Rational[1, 21845], 0., 0.}, {
+             Rational[3, 21845], 0, 
+             Rational[1, 3855], 
+             Rational[4, 65535]}, {
+             Rational[3, 21845], 
+             Rational[1, 65535], 0., 0.}, {
+             Rational[2, 13107], 0, 
+             Rational[1, 3855], 
+             Rational[1, 13107]}, {
+             Rational[2, 13107], 
+             Rational[1, 65535], 0., 0.}, {0.16799468791500666`, 
+            0.16799468791500688`, 0.0019920318725099766`, 
+            0.8320053120849934}, {0.8320053120849934, 0.99800796812749, 0., 
+            0.}, {0.03519256308100931, 0.16799468791500666`, 
+            0.3339973439575033, 0.36719787516600266`}, {0.8320053120849934, 
+            0.6660026560424965, 0., 0.}, {0.6328021248339973, 
+            0.16799468791500666`, 0.3339973439575033, 0.9648074369189907}, {
+            0.8320053120849934, 0.6660026560424965, 0., 0.}, {
+            0.10159362549800798`, 0.16799468791500666`, 0.5, 
+            0.36719787516600266`}, {0.8320053120849934, 0.8320053120849934, 
+            0., 0.}, {0.6328021248339973, 0.16799468791500666`, 0.5, 
+            0.898406374501992}, {0.8320053120849934, 0.8320053120849934, 0., 
+            0.}, {0.23439575033200533`, 0.2343957503320055, 
+            0.23439575033200533`, 0.7656042496679947}, {0.7656042496679947, 
+            1.0312084993359893`, 0., 0.}, {0.36719787516600266`, 
+            0.3671978751660027, -0.03120849933598936, 0.6328021248339973}, {
+            0.6328021248339973, 1.0312084993359893`, 0., 0.}, {
+            0.43359893758300133`, 0.03519256308100931, 0.6992031872509961, 
+            0.5664010624169987}, {0.9648074369189907, 0.8320053120849933, 0., 
+            0.}, {0.13479415670650732`, 0.10159362549800798`, 
+            0.7656042496679947, 0.8652058432934927}, {0.898406374501992, 
+            1.097609561752988, 0., 0.}, {0.36719787516600266`, 
+            0.03519256308100931, 0.6328021248339973, 0.6328021248339973}, {
+            0.9648074369189907, 0.8984063745019918, 0., 0.}, {
+            0.033333333333333375`, 0.1666666666666667, 0.33333333333333337`, 
+            0.9666666666666666}, {0.8333333333333334, 0.6666666666666666, 0., 
+            0.}, {0.1, 0.1666666666666667, 0.49933598937583, 0.9}, {
+            0.8333333333333334, 0.8326693227091633, 0., 0.}, {
+            0.0314666666666667, 0.16533333333333336`, 0.3323346613545817, 
+            0.9685333333333332}, {0.8346666666666667, 0.833667994687915, 0., 
+            0.}, {0.23333333333333334`, 
+            0.2333333333333335, -0.03333333333333332, 0.7666666666666666}, {
+            0.7666666666666666, 1.0333333333333334`, 0., 0.}, {
+            0.13333333333333333`, 0.1, 0.7649402390438247, 
+            0.8666666666666666}, {0.9, 1.098273572377158, 0., 0.}, {
+            0.13186666666666666`, 0.033333333333333375`, 0.6984050464807436, 
+            0.8681333333333333}, {0.9666666666666666, 1.0990717131474101`, 0.,
+             0.}, {0.13039413333333333`, 
+            0.0314666666666667, -0.035598143426294776`, 0.8696058666666666}, {
+            0.9685333333333332, 1.1013365232403718`, 0., 0.}, {
+            0.029592533333333396`, 
+            0.029592533333333396`, -0.03787201275962806, 
+            0.9704074666666666}, {0.9704074666666666, 1.103610392573705, 0., 
+            0.}, {0.1666666666666667, 0.16666666666666693`, 0., 
+            0.8333333333333334}, {0.8333333333333334, 1., 0., 0.}, {
+            0.5757575757575758, 0.2727272727272727, 0.2727272727272727, 
+            0.2727272727272727}, {0.2727272727272727, 0.5757575757575758, 
+            0.2727272727272727, 0.2727272727272727}, {0.2727272727272727, 
+            0.2727272727272727, 0.7272727272727273, 0.2727272727272727}, {
+            0.42424242424242425`, 0.2727272727272727, 0.2727272727272727, 
+            0.}, {0.2727272727272727, 0.2727272727272727, 0.5757575757575758, 
+            0.2727272727272727}, {0.2727272727272727, 0.12121212121212122`, 
+            0.2727272727272727, 0.2727272727272727}, {0.42424242424242425`, 
+            0.2727272727272727, 0.2727272727272727, 0.5454545454545454}, {
+            0.2727272727272727, 0.2727272727272727, 0.5757575757575758, 
+            0.2727272727272727}, {0.2727272727272727, 0.12121212121212122`, 
+            0.2727272727272727, 0.2727272727272727}, {0.5151515151515151, 
+            0.2727272727272727, 0.2727272727272727, 0.030303030303030304`}, {
+            0.2727272727272727, 0.8787878787878788, 0.2727272727272727, 
+            0.2727272727272727}, {0.2727272727272727, 0.2727272727272727, 
+            0.5757575757575758, 0.42424242424242425`}, {0.5151515151515151, 
+            0.2727272727272727, 0.2727272727272727, 0.5151515151515151}, {
+            0.2727272727272727, 0.8787878787878788, 0.2727272727272727, 
+            0.2727272727272727}, {0.2727272727272727, 0.2727272727272727, 
+            0.5757575757575758, 0.42424242424242425`}, {0.5151515151515151, 
+            0.2727272727272727, 0.2727272727272727, 0.2727272727272727}, {
+            0.2727272727272727, 0.5151515151515151, 0.2727272727272727, 
+            0.2727272727272727}, {0.2727272727272727, 0.2727272727272727, 
+            0.6363636363636364, 0.3939393939393939}, {0.3939393939393939, 
+            0.2727272727272727, 0.2727272727272727, 0.2727272727272727}, {
+            0.2727272727272727, 0.3939393939393939, 0.2727272727272727, 
+            0.2727272727272727}, {0.2727272727272727, 0.2727272727272727, 
+            0.7575757575757576, 0.2727272727272727}, {0.33333333333333337`, 
+            0.2727272727272727, 0.2727272727272727, 0.2727272727272727}, {
+            0.2727272727272727, 0.2727272727272727, 0.696969696969697, 
+            0.2727272727272727}, {0.2727272727272727, 0.21212121212121213`, 
+            0.2727272727272727, 0.5151515151515151}, {0.9393939393939394, 
+            0.2727272727272727, 0.2727272727272727, 0.2727272727272727}, {
+            0.2727272727272727, 1., 0.2727272727272727, 0.2727272727272727}, {
+            0.2727272727272727, 0.2727272727272727, 0.5757575757575758, 
+            0.6666666666666667}, {0.3939393939393939, 0.2727272727272727, 
+            0.2727272727272727, 0.2727272727272727}, {0.2727272727272727, 
+            0.2727272727272727, 0.696969696969697, 0.2727272727272727}, {
+            0.2727272727272727, 0.15151515151515152`, 0.2727272727272727, 
+            0.5151515151515151}, {0.595, 0.6970000000000001, 0.85, 1.}, {
+            0.5249999999999999, 0.615, 0.75, 1.}, {0., 
+             Rational[1, 65535], 0., 0.}}}}, {{{{
+            0.000289921416037232, 0.0002746623941405356, 0, 
+             0.000030518043793392844`}, {0.000045777065690089265`, 
+            0.000045777065690089265`, 0., 0.}, {
+            0.000015259021896696422`, 0, 0.000015259021896696422`, 
+             0.00007629510948348211}, {0.000015259021896696422`, 
+            0.000015259021896696422`, 0., 0.}, {0.0002746623941405356, 
+            0.00024414435034714275`, 0.000015259021896696422`, 
+            0.00006103608758678569}, {0.00016784924086366064`, 
+            0.000015259021896696422`, 0., 0.}, {0.00019836728465705348`, 
+            0.00009155413138017853, 0.000045777065690089265`, 
+            0.00007629510948348211}, {0.00012207217517357137`, 
+            0.000015259021896696422`, 0., 0.}, {0.00016784924086366064`, 
+            0.000030518043793392844`, 0.00006103608758678569, 
+            0.00009155413138017853}, {0.00010681315327687495`, 
+            0.000015259021896696422`, 0., 0.}, {
+            0.000030518043793392844`, 0, 0.00007629510948348211, 
+             0.00007629510948348211}, {0.000030518043793392844`, 
+            0.000015259021896696422`, 0., 0.}, {
+            0.000045777065690089265`, 0, 0.00007629510948348211, 
+             0.00007629510948348211}, {0.000045777065690089265`, 
+            0.000015259021896696422`, 0., 0.}, {0.00018310826276035706`, 
+            0.000030518043793392844`, 0.00006103608758678569, 
+            0.0001373311970702678}, {0.00015259021896696422`, 
+            0.000015259021896696422`, 0., 0.}, {
+            0.00006103608758678569, 0, 0.00012207217517357137`, 
+             0.00006103608758678569}, {0.00006103608758678569, 
+            0.000015259021896696422`, 0., 0.}, {
+            0.00007629510948348211, 0, 0.00012207217517357137`, 
+             0.00006103608758678569}, {0.00007629510948348211, 
+            0.000015259021896696422`, 0., 0.}, {0.00025940337224383917`, 
+            0.00012207217517357137`, 0.000045777065690089265`, 
+            0.00018310826276035706`}, {0.00022888532845044633`, 
+            0.000015259021896696422`, 0., 0.}, {0.0002136263065537499, 
+            0.000030518043793392844`, 0.00016784924086366064`, 
+            0.00019836728465705348`}, {0.0002136263065537499, 
+            0.000015259021896696422`, 0., 0.}, {
+            0.00009155413138017853, 0, 0.00018310826276035706`, 
+             0.00007629510948348211}, {0.00009155413138017853, 
+            0.000015259021896696422`, 0., 0.}, {
+            0.00010681315327687495`, 0, 0.00018310826276035706`, 
+             0.00007629510948348211}, {0.00010681315327687495`, 
+            0.000015259021896696422`, 0., 0.}, {0.00024414435034714275`, 
+            0.00006103608758678569, 0.00016784924086366064`, 
+            0.00024414435034714275`}, {0.00025940337224383917`, 
+            0.000015259021896696422`, 0., 0.}, {
+            0.00012207217517357137`, 0, 0.00022888532845044633`, 
+             0.00007629510948348211}, {0.00012207217517357137`, 
+            0.000015259021896696422`, 0., 0.}, {0.00022888532845044633`, 
+            0.000030518043793392844`, 0.00022888532845044633`, 
+            0.0002746623941405356}, {0.000289921416037232, 
+            0.000045777065690089265`, 0., 0.}, {
+            0.0001373311970702678, 0, 0.00025940337224383917`, 
+             0.00006103608758678569}, {0.0001373311970702678, 
+            0.000015259021896696422`, 0., 0.}, {
+            0.00015259021896696422`, 0, 0.00025940337224383917`, 
+             0.00007629510948348211}, {0.00015259021896696422`, 
+            0.000015259021896696422`, 0., 0.}, {0.16799468791500666`, 
+            0.16799468791500688`, 0.0019920318725099766`, 
+            0.8320053120849934}, {0.8320053120849934, 0.99800796812749, 0., 
+            0.}, {0.03519256308100931, 0.16799468791500666`, 
+            0.3339973439575033, 0.36719787516600266`}, {0.8320053120849934, 
+            0.6660026560424965, 0., 0.}, {0.6328021248339973, 
+            0.16799468791500666`, 0.3339973439575033, 0.9648074369189907}, {
+            0.8320053120849934, 0.6660026560424965, 0., 0.}, {
+            0.10159362549800798`, 0.16799468791500666`, 0.5, 
+            0.36719787516600266`}, {0.8320053120849934, 0.8320053120849934, 
+            0., 0.}, {0.6328021248339973, 0.16799468791500666`, 0.5, 
+            0.898406374501992}, {0.8320053120849934, 0.8320053120849934, 0., 
+            0.}, {0.23439575033200533`, 0.2343957503320055, 
+            0.23439575033200533`, 0.7656042496679947}, {0.7656042496679947, 
+            1.0312084993359893`, 0., 0.}, {0.36719787516600266`, 
+            0.3671978751660027, -0.03120849933598936, 0.6328021248339973}, {
+            0.6328021248339973, 1.0312084993359893`, 0., 0.}, {
+            0.43359893758300133`, 0.03519256308100931, 0.6992031872509961, 
+            0.5664010624169987}, {0.9648074369189907, 0.8320053120849933, 0., 
+            0.}, {0.13479415670650732`, 0.10159362549800798`, 
+            0.7656042496679947, 0.8652058432934927}, {0.898406374501992, 
+            1.097609561752988, 0., 0.}, {0.36719787516600266`, 
+            0.03519256308100931, 0.6328021248339973, 0.6328021248339973}, {
+            0.9648074369189907, 0.8984063745019918, 0., 0.}, {
+            0.033333333333333375`, 0.1666666666666667, 0.33333333333333337`, 
+            0.9666666666666666}, {0.8333333333333334, 0.6666666666666666, 0., 
+            0.}, {0.1, 0.1666666666666667, 0.49933598937583, 0.9}, {
+            0.8333333333333334, 0.8326693227091633, 0., 0.}, {
+            0.0314666666666667, 0.16533333333333336`, 0.3323346613545817, 
+            0.9685333333333332}, {0.8346666666666667, 0.833667994687915, 0., 
+            0.}, {0.23333333333333334`, 
+            0.2333333333333335, -0.03333333333333332, 0.7666666666666666}, {
+            0.7666666666666666, 1.0333333333333334`, 0., 0.}, {
+            0.13333333333333333`, 0.1, 0.7649402390438247, 
+            0.8666666666666666}, {0.9, 1.098273572377158, 0., 0.}, {
+            0.13186666666666666`, 0.033333333333333375`, 0.6984050464807436, 
+            0.8681333333333333}, {0.9666666666666666, 1.0990717131474101`, 0.,
+             0.}, {0.13039413333333333`, 
+            0.0314666666666667, -0.035598143426294776`, 0.8696058666666666}, {
+            0.9685333333333332, 1.1013365232403718`, 0., 0.}, {
+            0.029592533333333396`, 
+            0.029592533333333396`, -0.03787201275962806, 
+            0.9704074666666666}, {0.9704074666666666, 1.103610392573705, 0., 
+            0.}, {0.1666666666666667, 0.16666666666666693`, 0., 
+            0.8333333333333334}, {0.8333333333333334, 1., 0., 0.}, {
+            0.5757575757575758, 0.2727272727272727, 0.2727272727272727, 
+            0.2727272727272727}, {0.2727272727272727, 0.5757575757575758, 
+            0.2727272727272727, 0.2727272727272727}, {0.2727272727272727, 
+            0.2727272727272727, 0.7272727272727273, 0.2727272727272727}, {
+            0.42424242424242425`, 0.2727272727272727, 0.2727272727272727, 
+            0.}, {0.2727272727272727, 0.2727272727272727, 0.5757575757575758, 
+            0.2727272727272727}, {0.2727272727272727, 0.12121212121212122`, 
+            0.2727272727272727, 0.2727272727272727}, {0.42424242424242425`, 
+            0.2727272727272727, 0.2727272727272727, 0.5454545454545454}, {
+            0.2727272727272727, 0.2727272727272727, 0.5757575757575758, 
+            0.2727272727272727}, {0.2727272727272727, 0.12121212121212122`, 
+            0.2727272727272727, 0.2727272727272727}, {0.5151515151515151, 
+            0.2727272727272727, 0.2727272727272727, 0.030303030303030304`}, {
+            0.2727272727272727, 0.8787878787878788, 0.2727272727272727, 
+            0.2727272727272727}, {0.2727272727272727, 0.2727272727272727, 
+            0.5757575757575758, 0.42424242424242425`}, {0.5151515151515151, 
+            0.2727272727272727, 0.2727272727272727, 0.5151515151515151}, {
+            0.2727272727272727, 0.8787878787878788, 0.2727272727272727, 
+            0.2727272727272727}, {0.2727272727272727, 0.2727272727272727, 
+            0.5757575757575758, 0.42424242424242425`}, {0.5151515151515151, 
+            0.2727272727272727, 0.2727272727272727, 0.2727272727272727}, {
+            0.2727272727272727, 0.5151515151515151, 0.2727272727272727, 
+            0.2727272727272727}, {0.2727272727272727, 0.2727272727272727, 
+            0.6363636363636364, 0.3939393939393939}, {0.3939393939393939, 
+            0.2727272727272727, 0.2727272727272727, 0.2727272727272727}, {
+            0.2727272727272727, 0.3939393939393939, 0.2727272727272727, 
+            0.2727272727272727}, {0.2727272727272727, 0.2727272727272727, 
+            0.7575757575757576, 0.2727272727272727}, {0.33333333333333337`, 
+            0.2727272727272727, 0.2727272727272727, 0.2727272727272727}, {
+            0.2727272727272727, 0.2727272727272727, 0.696969696969697, 
+            0.2727272727272727}, {0.2727272727272727, 0.21212121212121213`, 
+            0.2727272727272727, 0.5151515151515151}, {0.9393939393939394, 
+            0.2727272727272727, 0.2727272727272727, 0.2727272727272727}, {
+            0.2727272727272727, 1., 0.2727272727272727, 0.2727272727272727}, {
+            0.2727272727272727, 0.2727272727272727, 0.5757575757575758, 
+            0.6666666666666667}, {0.3939393939393939, 0.2727272727272727, 
+            0.2727272727272727, 0.2727272727272727}, {0.2727272727272727, 
+            0.2727272727272727, 0.696969696969697, 0.2727272727272727}, {
+            0.2727272727272727, 0.15151515151515152`, 0.2727272727272727, 
+            0.5151515151515151}, {0.595, 0.6970000000000001, 0.85, 1.}, {
+            0.5249999999999999, 0.615, 0.75, 1.}, {0., 
+            0.000015259021896696422`, 0., 0.}}}}]], SurfaceAppearance[
+       "CSG3D", "RootNodeIndex" -> 1, "NodesIndex" -> 1, "BoxesIndex" -> 39, 
+        "TransformsIndex" -> 77, "StylesIndex" -> 107, "PixelCount" -> 109, 
+        "BoxesMinMax" -> {-15.06, 15.06}, "TransformsMinMax" -> {-9., 24.}, 
+        "EdgeThicknessMinMax" -> {0., 1.}, "Epsilon" -> 
+        0.00015060000000000003`, "MaxIterations" -> 20000, "Antialiasing" -> 
+        2, "Input" -> HoldComplete[
+          CSGRegion["Difference", {
+            Cylinder[{{0, 0, -15}, {0, 0, 15}}, 10], 
+            CSGRegion["Union", {
+              Cylinder[{{-9, -10, 0}, {-9, 10, 0}}, 5], 
+              Cylinder[{{9, -10, 0}, {9, 10, 0}}, 5], 
+              Cuboid[{-12, -10, 0}, {-4, 10, 10}], 
+              Cuboid[{12, -10, 0}, {4, 10, 10}], 
+              Cylinder[{{0, 0, -8}, {0, 0, 16}}, 8], 
+              Cylinder[{{0, 0, -16}, {0, 0, 16}}, 4], 
+              Cylinder[{{0, -14, 8}, {0, 14, 8}}, 2], 
+              CSGRegion["Difference", {
+                Cuboid[{-11, -12, 8}, {11, 12, 18}], 
+                Cylinder[{{0, -14, 8}, {0, 14, 8}}, 4]}]}]}]]], EdgeForm[
+       None], CuboidBox[{-10.08016, -10.080159999999992`, -15.12024}, {
+        10.08016, 10.08016, 15.12024}]}],
+     MouseAppearanceTag["LinkHand"]],
+    AllowKernelInitialization->False],
+   "RegionGraphics3D",
+   AutoDelete->True,
+   Editable->False,
+   Selectable->False],
+  BaseStyle->{
+    EdgeForm[None], 
+    Hue[0.6, 0.3, 0.85]},
+  Boxed->False,
+  DefaultBaseStyle->{FrontEnd`GraphicsHighlightColor -> Hue[0.1, 1, 0.7]},
+  Lighting->{{"Ambient", 
+     GrayLevel[0.45]}, {"Directional", 
+     GrayLevel[0.3], 
+     ImageScaled[{2, 0, 2}]}, {"Directional", 
+     GrayLevel[0.33], 
+     ImageScaled[{2, 2, 2}]}, {"Directional", 
+     GrayLevel[0.3], 
+     ImageScaled[{0, 2, 2}]}}]], "Output",
+ CellChangeTimes->{3.862132024647005*^9},
+ CellLabel->"Out[151]=",ImageCache->GraphicsData["CompressedBitmap", "\<\
+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
+75aGO5sjb2Iilp0YeOc75sVjW7zo2pUOghIdN7jXrMZuuD42SjPWlMjNDvlC
+MiPKV0XCdSPfcLbRCekX46ZkH6NTn/Fo1YyXKeN+yjKOpOIT+fALjmyg5B7D
+5/GmG9h4Q6sTScPBVxuZpAvlkv6Yrib6F7ma78TXtqXJfDAOUjPdd4bMDE9K
+ymF8kupMxlODZTzYX8Zf4zHF0fMeAaN6k2p2a6xG7ShpElLTfaWaxuetJ6xk
+8wi3rdfRwi1MtMPwtY1lIeYn2pH3bKl9vYYwBI3bCjPvtuoHvZKy1YO6Xj1W
+D1SsfoI9lm/QoBUj9OAeM/8RwtIrm1gLF97GJVERX5SOiHNuEWsgXVvEXlEx
+GIadisZFRZCqR96zNRVFp2pH0/IVfTS8atBPgv5D7+Ii3pVoBOG/eVRt35CI
+tlWTdv2rhTAtTLrOsLaAzSef2Uy4qofja1Px+l5FX1WPnL01xqIiYrF6mpJW
+a8gVTdINfpIm2JKLvq/3okIXFU2/nupZJufDuN8C1ISBj0ff0YtZKyFM6sFA
+C0ufgD0tTyeOMYLHUbnCGUcolee9VV6aubZkxTP4EnoEvjaWJi8veap85Oxt
+0UrSMoGnJfAOXOALtrxjjKcLz3H8Yp8UbFHZb2E2m1MUf1sV8eOTgWdUc/qn
+d4Clobn0z4PUOLq79D8SXxscpr6i/kfN3uZONC/UvvgVTB3qWPzt+fJ74uLd
+xgS47ttNv3jCfSX8FJh3Sd+mE9/c4kYX/H8qSsXeIhWsB7fZ2N6bChQSy/uO
+RIY739he20PRHQUh71zb4wYVbYO6izTobCXPiCCCE6DlQdCoVtKZuN9JfYHR
+OX0wcsbU+58zpix/xpiM19MadBbSoLUQfVn6JNXuoMlr8BCc9Zo3+81PwT0E
+VvdDnzn6ieinI/EBYrc2b3c0Nbua0ofB6roaQtNzaXXoseeVJ8xS1bxkb0xw
+dil2HcDOOG9lJI1iJLHdg0iSdzKySgVpLJ+VOqVHQ2nmXehMVkTHuQe+Ba9Z
+fA/ciKUdcP4Dh5fd75yNneig1TukfdCvZRkjbVkCiSdDkzOG/BmCOw8rMORF
+tkC7jUHDCMqxzYhtlFhFZEJYEyUIjWrn0ljQFNzQsCyAgfXLDX1wPGwlLN4O
+sxdvNwUu3tDHh6V9REYnubXbFTfjng5MSOklg4dOMOa8I8w9o9ncI2LkU7vl
+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
+ldnJHLHIJN/8KKmAI5boiyMIC+qIy0sSl6s4F8TDG7hsUVaQiSvoSvg0Zc3i
+XJA5C1zGEJddEpd9EpeDDi5HeUq+zf9B5QdfUXBZTFz+LLh8beOyyoXL6zlz
+iZprdKn1L0s8rqbN9jqyQ4DFr2QW7NKtyyxeNlnsofx4yORhspgusUA+SIw2
+LRZvChZvmSz+YLGghG67s2KhucHY5AaD3cQ/v9iwIm/mShy6cw6Jc1u2NTDr
+g9hs3CU9ZXLAqAkc2KgJa9yRb2rCAieHA4LD4aw4LHVwQDa0fHPQogiAsAbh
+8yQE19LmpfrV/3i7dZPIB9+i+bPszS+Xm79sP8oI2Zu/Tt38+XLzd9ibj8yV
+SGe4Qtn8vwc5JaTWGxMXGQulll5Hm530a3reYd21mbcYaOUos5XzdlIrkZ1w
+EmslEkJiVDZ91UFKx4Tc4rZWbnK28ndSK/+UauWewK2klKfmrZvUTKN8gZHo
+0CWhLZLadz1tdkSgqaNtfNiPnKK8bXywiqLiqbb91ta22aJtL/tq23+Jtv01
+27bpdw/UqT2LpfbcQJuXJFq0aW/gOY69Ldt8tuXj9LZsOUlJWDBqdG3LXrkt
+3zracory6klt0X86QF8m7XpP2myjJ354j4HnKap7hUmLzV1+n3Z5hm2XP6W8
+oxiKIL8u6kyk7fLOQLtMJY+Rg3eFtJ//TJstkIOCSo6n7d9Sef8OOfbvmMf+
+feW1fwbTqLNbosSlnXpoq6X9uZk2myLri97zR/2NgU/PUtwMiH14I7UPcx37
+sNC+Dzq7RUUiT6Q81F6Xfu922qxJ5dd/eNdAZACjcuw3/3SwfsvdQ/Rb73lE
+v7XPUP22vo/qve/95Wbpo1IYWfGN4hvFN4pvFN8ovlGQN7R/+H94NGeq\
+\>", "ImageResolution" -> \
+120.],ExpressionUUID->"54e71cb4-05ae-4a00-ad04-4904d4baac6c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CSGRegionTree", "[", 
+  RowBox[{"CSGRegion", "[", 
+   RowBox[{"\"\<Union\>\"", ",", 
+    RowBox[{"{", 
+     RowBox[{"%", ",", 
+      RowBox[{"Translate", "[", 
+       RowBox[{
+        RowBox[{"Rotate", "[", 
+         RowBox[{
+          RowBox[{"Rotate", "[", 
+           RowBox[{"%", ",", 
+            RowBox[{"180", "Degree"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], "]"}], ",", 
+          RowBox[{"90", "Degree"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "16"}], "}"}]}], "]"}], ",", 
+      RowBox[{"CSGRegion", "[", 
+       RowBox[{"\"\<Union\>\"", ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Cylinder", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"0", ",", 
+                RowBox[{"-", "12"}], ",", "8"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"0", ",", "12", ",", "8"}], "}"}]}], "}"}], ",", 
+            "1.5"}], "]"}], ",", 
+          RowBox[{"Cylinder", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "12"}], ",", "0", ",", "8"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"12", ",", "0", ",", "8"}], "}"}]}], "}"}], ",", 
+            "1.5"}], "]"}], ",", 
+          RowBox[{"Ball", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "8"}], "}"}], ",", "4"}], "]"}]}], 
+         "}"}]}], "]"}]}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.862131995589939*^9, 3.862131999038919*^9}},
+ CellLabel->
+  "In[152]:=",ExpressionUUID->"cb8c3b81-027a-4bfd-9b4c-52991aae35cb"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["Trees",
+   DynamicModuleBox[{Typeset`tree = HoldComplete[
+     Tree["Union", {
+       Tree["Difference", {
+         Tree[
+          Cylinder[{{0, 0, -15}, {0, 0, 15}}, 10], {}, 
+          Trees`TreeElementShapeFunction -> (Tooltip[
+            Inset[
+             Graphics3D[{
+               Hue[0.6, 0.2, 0.95], 
+               EdgeForm[None], 
+               Specularity[
+                GrayLevel[0.2], 30], 
+               Cylinder[{{0, 0, -15}, {0, 0, 15}}, 10]}, ImageSize -> 20, 
+              Boxed -> False, Lighting -> {{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], #], 
+            Cylinder[{{0, 0, -15}, {0, 0, 15}}, 10]]& ), TreeElementLabel -> 
+          None], 
+         Tree["Union", {
+           Tree[
+            Cylinder[{{-9, -10, 0}, {-9, 10, 0}}, 5], {}, 
+            Trees`TreeElementShapeFunction -> (Tooltip[
+              Inset[
+               Graphics3D[{
+                 Hue[0.6, 0.2, 0.95], 
+                 EdgeForm[None], 
+                 Specularity[
+                  GrayLevel[0.2], 30], 
+                 Cylinder[{{-9, -10, 0}, {-9, 10, 0}}, 5]}, ImageSize -> 20, 
+                Boxed -> False, Lighting -> {{"Ambient", 
+                   GrayLevel[0.45]}, {"Directional", 
+                   GrayLevel[0.3], 
+                   ImageScaled[{2, 0, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{2, 2, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{0, 2, 2}]}}], #], 
+              Cylinder[{{-9, -10, 0}, {-9, 10, 0}}, 5]]& ), TreeElementLabel -> 
+            None], 
+           Tree[
+            Cylinder[{{9, -10, 0}, {9, 10, 0}}, 5], {}, 
+            Trees`TreeElementShapeFunction -> (Tooltip[
+              Inset[
+               Graphics3D[{
+                 Hue[0.6, 0.2, 0.95], 
+                 EdgeForm[None], 
+                 Specularity[
+                  GrayLevel[0.2], 30], 
+                 Cylinder[{{9, -10, 0}, {9, 10, 0}}, 5]}, ImageSize -> 20, 
+                Boxed -> False, Lighting -> {{"Ambient", 
+                   GrayLevel[0.45]}, {"Directional", 
+                   GrayLevel[0.3], 
+                   ImageScaled[{2, 0, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{2, 2, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{0, 2, 2}]}}], #], 
+              Cylinder[{{9, -10, 0}, {9, 10, 0}}, 5]]& ), TreeElementLabel -> 
+            None], 
+           Tree[
+            Cuboid[{-12, -10, 0}, {-4, 10, 10}], {}, 
+            Trees`TreeElementShapeFunction -> (Tooltip[
+              Inset[
+               Graphics3D[{
+                 Hue[0.6, 0.2, 0.95], 
+                 EdgeForm[None], 
+                 Specularity[
+                  GrayLevel[0.2], 30], 
+                 Cuboid[{-12, -10, 0}, {-4, 10, 10}]}, ImageSize -> 20, Boxed -> 
+                False, Lighting -> {{"Ambient", 
+                   GrayLevel[0.45]}, {"Directional", 
+                   GrayLevel[0.3], 
+                   ImageScaled[{2, 0, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{2, 2, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{0, 2, 2}]}}], #], 
+              Cuboid[{-12, -10, 0}, {-4, 10, 10}]]& ), TreeElementLabel -> 
+            None], 
+           Tree[
+            Cuboid[{12, -10, 0}, {4, 10, 10}], {}, 
+            Trees`TreeElementShapeFunction -> (Tooltip[
+              Inset[
+               Graphics3D[{
+                 Hue[0.6, 0.2, 0.95], 
+                 EdgeForm[None], 
+                 Specularity[
+                  GrayLevel[0.2], 30], 
+                 Cuboid[{12, -10, 0}, {4, 10, 10}]}, ImageSize -> 20, Boxed -> 
+                False, Lighting -> {{"Ambient", 
+                   GrayLevel[0.45]}, {"Directional", 
+                   GrayLevel[0.3], 
+                   ImageScaled[{2, 0, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{2, 2, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{0, 2, 2}]}}], #], 
+              Cuboid[{12, -10, 0}, {4, 10, 10}]]& ), TreeElementLabel -> 
+            None], 
+           Tree[
+            Cylinder[{{0, 0, -8}, {0, 0, 16}}, 8], {}, 
+            Trees`TreeElementShapeFunction -> (Tooltip[
+              Inset[
+               Graphics3D[{
+                 Hue[0.6, 0.2, 0.95], 
+                 EdgeForm[None], 
+                 Specularity[
+                  GrayLevel[0.2], 30], 
+                 Cylinder[{{0, 0, -8}, {0, 0, 16}}, 8]}, ImageSize -> 20, 
+                Boxed -> False, Lighting -> {{"Ambient", 
+                   GrayLevel[0.45]}, {"Directional", 
+                   GrayLevel[0.3], 
+                   ImageScaled[{2, 0, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{2, 2, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{0, 2, 2}]}}], #], 
+              Cylinder[{{0, 0, -8}, {0, 0, 16}}, 8]]& ), TreeElementLabel -> 
+            None], 
+           Tree[
+            Cylinder[{{0, 0, -16}, {0, 0, 16}}, 4], {}, 
+            Trees`TreeElementShapeFunction -> (Tooltip[
+              Inset[
+               Graphics3D[{
+                 Hue[0.6, 0.2, 0.95], 
+                 EdgeForm[None], 
+                 Specularity[
+                  GrayLevel[0.2], 30], 
+                 Cylinder[{{0, 0, -16}, {0, 0, 16}}, 4]}, ImageSize -> 20, 
+                Boxed -> False, Lighting -> {{"Ambient", 
+                   GrayLevel[0.45]}, {"Directional", 
+                   GrayLevel[0.3], 
+                   ImageScaled[{2, 0, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{2, 2, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{0, 2, 2}]}}], #], 
+              Cylinder[{{0, 0, -16}, {0, 0, 16}}, 4]]& ), TreeElementLabel -> 
+            None], 
+           Tree[
+            Cylinder[{{0, -14, 8}, {0, 14, 8}}, 2], {}, 
+            Trees`TreeElementShapeFunction -> (Tooltip[
+              Inset[
+               Graphics3D[{
+                 Hue[0.6, 0.2, 0.95], 
+                 EdgeForm[None], 
+                 Specularity[
+                  GrayLevel[0.2], 30], 
+                 Cylinder[{{0, -14, 8}, {0, 14, 8}}, 2]}, ImageSize -> 20, 
+                Boxed -> False, Lighting -> {{"Ambient", 
+                   GrayLevel[0.45]}, {"Directional", 
+                   GrayLevel[0.3], 
+                   ImageScaled[{2, 0, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{2, 2, 2}]}, {"Directional", 
+                   GrayLevel[0.25], 
+                   ImageScaled[{0, 2, 2}]}}], #], 
+              Cylinder[{{0, -14, 8}, {0, 14, 8}}, 2]]& ), TreeElementLabel -> 
+            None], 
+           Tree["Difference", {
+             Tree[
+              Cuboid[{-11, -12, 8}, {11, 12, 18}], {}, 
+              Trees`TreeElementShapeFunction -> (Tooltip[
+                Inset[
+                 Graphics3D[{
+                   Hue[0.6, 0.2, 0.95], 
+                   EdgeForm[None], 
+                   Specularity[
+                    GrayLevel[0.2], 30], 
+                   Cuboid[{-11, -12, 8}, {11, 12, 18}]}, ImageSize -> 20, 
+                  Boxed -> False, Lighting -> {{"Ambient", 
+                    GrayLevel[0.45]}, {"Directional", 
+                    GrayLevel[0.3], 
+                    ImageScaled[{2, 0, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{2, 2, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{0, 2, 2}]}}], #], 
+                Cuboid[{-11, -12, 8}, {11, 12, 18}]]& ), TreeElementLabel -> 
+              None], 
+             Tree[
+              Cylinder[{{0, -14, 8}, {0, 14, 8}}, 4], {}, 
+              Trees`TreeElementShapeFunction -> (Tooltip[
+                Inset[
+                 Graphics3D[{
+                   Hue[0.6, 0.2, 0.95], 
+                   EdgeForm[None], 
+                   Specularity[
+                    GrayLevel[0.2], 30], 
+                   Cylinder[{{0, -14, 8}, {0, 14, 8}}, 4]}, ImageSize -> 20, 
+                  Boxed -> False, Lighting -> {{"Ambient", 
+                    GrayLevel[0.45]}, {"Directional", 
+                    GrayLevel[0.3], 
+                    ImageScaled[{2, 0, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{2, 2, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{0, 2, 2}]}}], #], 
+                Cylinder[{{0, -14, 8}, {0, 14, 8}}, 4]]& ), TreeElementLabel -> 
+              None]}, Trees`TreeElementShapeFunction -> (Tooltip[
+              Inset[
+               Graphics[{
+                 GrayLevel[0.85], 
+                 Rectangle[{-1, -1}, {1, 1}, RoundingRadius -> Offset[4]], 
+                 Text[
+                  Style["\[Minus]", {FontFamily -> "Times", 11, 
+                    GrayLevel[0.5]}, ShowStringCharacters -> False]]}, 
+                AspectRatio -> 1, ImageSize -> 20], #], "Difference"]& ), 
+            TreeElementLabel -> None]}, 
+          Trees`TreeElementShapeFunction -> (Tooltip[
+            Inset[
+             Graphics[{
+               GrayLevel[0.85], 
+               Rectangle[{-1, -1}, {1, 1}, RoundingRadius -> Offset[4]], 
+               Text[
+                Style["\[Union]", {FontFamily -> "Times", 11, 
+                  GrayLevel[0.5]}, ShowStringCharacters -> False]]}, 
+              AspectRatio -> 1, ImageSize -> 20], #], "Union"]& ), 
+          TreeElementLabel -> None]}, 
+        Trees`TreeElementShapeFunction -> (Tooltip[
+          Inset[
+           Graphics[{
+             GrayLevel[0.85], 
+             Rectangle[{-1, -1}, {1, 1}, RoundingRadius -> Offset[4]], 
+             Text[
+              Style["\[Minus]", {FontFamily -> "Times", 11, 
+                GrayLevel[0.5]}, ShowStringCharacters -> False]]}, 
+            AspectRatio -> 1, ImageSize -> 20], #], "Difference"]& ), 
+        TreeElementLabel -> None], 
+       Tree[
+        TransformationFunction[{{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 16}, {0,
+          0, 0, 1}}], {
+         Tree[
+          
+          TransformationFunction[{{0, -1, 0, 0}, {1, 0, 0, 0}, {0, 0, 1, 0}, {
+           0, 0, 0, 1}}], {
+           Tree[
+            
+            TransformationFunction[{{1, 0, 0, 0}, {0, -1, 0, 0}, {0, 0, -1, 
+             0}, {0, 0, 0, 1}}], {
+             Tree["Difference", {
+               Tree[
+                Cylinder[{{0, 0, -15}, {0, 0, 15}}, 10], {}, 
+                Trees`TreeElementShapeFunction -> (Tooltip[
+                  Inset[
+                   Graphics3D[{
+                    Hue[0.6, 0.2, 0.95], 
+                    EdgeForm[None], 
+                    Specularity[
+                    GrayLevel[0.2], 30], 
+                    Cylinder[{{0, 0, -15}, {0, 0, 15}}, 10]}, ImageSize -> 20,
+                     Boxed -> False, Lighting -> {{"Ambient", 
+                    GrayLevel[0.45]}, {"Directional", 
+                    GrayLevel[0.3], 
+                    ImageScaled[{2, 0, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{2, 2, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{0, 2, 2}]}}], #], 
+                  Cylinder[{{0, 0, -15}, {0, 0, 15}}, 10]]& ), 
+                TreeElementLabel -> None], 
+               Tree["Union", {
+                 Tree[
+                  Cylinder[{{-9, -10, 0}, {-9, 10, 0}}, 5], {}, 
+                  Trees`TreeElementShapeFunction -> (Tooltip[
+                    Inset[
+                    Graphics3D[{
+                    Hue[0.6, 0.2, 0.95], 
+                    EdgeForm[None], 
+                    Specularity[
+                    GrayLevel[0.2], 30], 
+                    Cylinder[{{-9, -10, 0}, {-9, 10, 0}}, 5]}, ImageSize -> 
+                    20, Boxed -> False, Lighting -> {{"Ambient", 
+                    GrayLevel[0.45]}, {"Directional", 
+                    GrayLevel[0.3], 
+                    ImageScaled[{2, 0, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{2, 2, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{0, 2, 2}]}}], #], 
+                    Cylinder[{{-9, -10, 0}, {-9, 10, 0}}, 5]]& ), 
+                  TreeElementLabel -> None], 
+                 Tree[
+                  Cylinder[{{9, -10, 0}, {9, 10, 0}}, 5], {}, 
+                  Trees`TreeElementShapeFunction -> (Tooltip[
+                    Inset[
+                    Graphics3D[{
+                    Hue[0.6, 0.2, 0.95], 
+                    EdgeForm[None], 
+                    Specularity[
+                    GrayLevel[0.2], 30], 
+                    Cylinder[{{9, -10, 0}, {9, 10, 0}}, 5]}, ImageSize -> 20, 
+                    Boxed -> False, Lighting -> {{"Ambient", 
+                    GrayLevel[0.45]}, {"Directional", 
+                    GrayLevel[0.3], 
+                    ImageScaled[{2, 0, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{2, 2, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{0, 2, 2}]}}], #], 
+                    Cylinder[{{9, -10, 0}, {9, 10, 0}}, 5]]& ), 
+                  TreeElementLabel -> None], 
+                 Tree[
+                  Cuboid[{-12, -10, 0}, {-4, 10, 10}], {}, 
+                  Trees`TreeElementShapeFunction -> (Tooltip[
+                    Inset[
+                    Graphics3D[{
+                    Hue[0.6, 0.2, 0.95], 
+                    EdgeForm[None], 
+                    Specularity[
+                    GrayLevel[0.2], 30], 
+                    Cuboid[{-12, -10, 0}, {-4, 10, 10}]}, ImageSize -> 20, 
+                    Boxed -> False, Lighting -> {{"Ambient", 
+                    GrayLevel[0.45]}, {"Directional", 
+                    GrayLevel[0.3], 
+                    ImageScaled[{2, 0, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{2, 2, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{0, 2, 2}]}}], #], 
+                    Cuboid[{-12, -10, 0}, {-4, 10, 10}]]& ), TreeElementLabel -> 
+                  None], 
+                 Tree[
+                  Cuboid[{12, -10, 0}, {4, 10, 10}], {}, 
+                  Trees`TreeElementShapeFunction -> (Tooltip[
+                    Inset[
+                    Graphics3D[{
+                    Hue[0.6, 0.2, 0.95], 
+                    EdgeForm[None], 
+                    Specularity[
+                    GrayLevel[0.2], 30], 
+                    Cuboid[{12, -10, 0}, {4, 10, 10}]}, ImageSize -> 20, 
+                    Boxed -> False, Lighting -> {{"Ambient", 
+                    GrayLevel[0.45]}, {"Directional", 
+                    GrayLevel[0.3], 
+                    ImageScaled[{2, 0, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{2, 2, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{0, 2, 2}]}}], #], 
+                    Cuboid[{12, -10, 0}, {4, 10, 10}]]& ), TreeElementLabel -> 
+                  None], 
+                 Tree[
+                  Cylinder[{{0, 0, -8}, {0, 0, 16}}, 8], {}, 
+                  Trees`TreeElementShapeFunction -> (Tooltip[
+                    Inset[
+                    Graphics3D[{
+                    Hue[0.6, 0.2, 0.95], 
+                    EdgeForm[None], 
+                    Specularity[
+                    GrayLevel[0.2], 30], 
+                    Cylinder[{{0, 0, -8}, {0, 0, 16}}, 8]}, ImageSize -> 20, 
+                    Boxed -> False, Lighting -> {{"Ambient", 
+                    GrayLevel[0.45]}, {"Directional", 
+                    GrayLevel[0.3], 
+                    ImageScaled[{2, 0, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{2, 2, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{0, 2, 2}]}}], #], 
+                    Cylinder[{{0, 0, -8}, {0, 0, 16}}, 8]]& ), 
+                  TreeElementLabel -> None], 
+                 Tree[
+                  Cylinder[{{0, 0, -16}, {0, 0, 16}}, 4], {}, 
+                  Trees`TreeElementShapeFunction -> (Tooltip[
+                    Inset[
+                    Graphics3D[{
+                    Hue[0.6, 0.2, 0.95], 
+                    EdgeForm[None], 
+                    Specularity[
+                    GrayLevel[0.2], 30], 
+                    Cylinder[{{0, 0, -16}, {0, 0, 16}}, 4]}, ImageSize -> 20, 
+                    Boxed -> False, Lighting -> {{"Ambient", 
+                    GrayLevel[0.45]}, {"Directional", 
+                    GrayLevel[0.3], 
+                    ImageScaled[{2, 0, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{2, 2, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{0, 2, 2}]}}], #], 
+                    Cylinder[{{0, 0, -16}, {0, 0, 16}}, 4]]& ), 
+                  TreeElementLabel -> None], 
+                 Tree[
+                  Cylinder[{{0, -14, 8}, {0, 14, 8}}, 2], {}, 
+                  Trees`TreeElementShapeFunction -> (Tooltip[
+                    Inset[
+                    Graphics3D[{
+                    Hue[0.6, 0.2, 0.95], 
+                    EdgeForm[None], 
+                    Specularity[
+                    GrayLevel[0.2], 30], 
+                    Cylinder[{{0, -14, 8}, {0, 14, 8}}, 2]}, ImageSize -> 20, 
+                    Boxed -> False, Lighting -> {{"Ambient", 
+                    GrayLevel[0.45]}, {"Directional", 
+                    GrayLevel[0.3], 
+                    ImageScaled[{2, 0, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{2, 2, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{0, 2, 2}]}}], #], 
+                    Cylinder[{{0, -14, 8}, {0, 14, 8}}, 2]]& ), 
+                  TreeElementLabel -> None], 
+                 Tree["Difference", {
+                   Tree[
+                    Cuboid[{-11, -12, 8}, {11, 12, 18}], {}, 
+                    Trees`TreeElementShapeFunction -> (Tooltip[
+                    Inset[
+                    Graphics3D[{
+                    Hue[0.6, 0.2, 0.95], 
+                    EdgeForm[None], 
+                    Specularity[
+                    GrayLevel[0.2], 30], 
+                    Cuboid[{-11, -12, 8}, {11, 12, 18}]}, ImageSize -> 20, 
+                    Boxed -> False, Lighting -> {{"Ambient", 
+                    GrayLevel[0.45]}, {"Directional", 
+                    GrayLevel[0.3], 
+                    ImageScaled[{2, 0, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{2, 2, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{0, 2, 2}]}}], #], 
+                    Cuboid[{-11, -12, 8}, {11, 12, 18}]]& ), TreeElementLabel -> 
+                    None], 
+                   Tree[
+                    Cylinder[{{0, -14, 8}, {0, 14, 8}}, 4], {}, 
+                    Trees`TreeElementShapeFunction -> (Tooltip[
+                    Inset[
+                    Graphics3D[{
+                    Hue[0.6, 0.2, 0.95], 
+                    EdgeForm[None], 
+                    Specularity[
+                    GrayLevel[0.2], 30], 
+                    Cylinder[{{0, -14, 8}, {0, 14, 8}}, 4]}, ImageSize -> 20, 
+                    Boxed -> False, Lighting -> {{"Ambient", 
+                    GrayLevel[0.45]}, {"Directional", 
+                    GrayLevel[0.3], 
+                    ImageScaled[{2, 0, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{2, 2, 2}]}, {"Directional", 
+                    GrayLevel[0.25], 
+                    ImageScaled[{0, 2, 2}]}}], #], 
+                    Cylinder[{{0, -14, 8}, {0, 14, 8}}, 4]]& ), 
+                    TreeElementLabel -> None]}, 
+                  Trees`TreeElementShapeFunction -> (Tooltip[
+                    Inset[
+                    Graphics[{
+                    GrayLevel[0.85], 
+                    Rectangle[{-1, -1}, {1, 1}, RoundingRadius -> Offset[4]], 
+                    Text[
+                    Style["\[Minus]", {FontFamily -> "Times", 11, 
+                    GrayLevel[0.5]}, ShowStringCharacters -> False]]}, 
+                    AspectRatio -> 1, ImageSize -> 20], #], "Difference"]& ), 
+                  TreeElementLabel -> None]}, 
+                Trees`TreeElementShapeFunction -> (Tooltip[
+                  Inset[
+                   Graphics[{
+                    GrayLevel[0.85], 
+                    Rectangle[{-1, -1}, {1, 1}, RoundingRadius -> Offset[4]], 
+                    Text[
+                    Style["\[Union]", {FontFamily -> "Times", 11, 
+                    GrayLevel[0.5]}, ShowStringCharacters -> False]]}, 
+                    AspectRatio -> 1, ImageSize -> 20], #], "Union"]& ), 
+                TreeElementLabel -> None]}, 
+              Trees`TreeElementShapeFunction -> (Tooltip[
+                Inset[
+                 Graphics[{
+                   GrayLevel[0.85], 
+                   Rectangle[{-1, -1}, {1, 1}, RoundingRadius -> Offset[4]], 
+                   Text[
+                    Style["\[Minus]", {FontFamily -> "Times", 11, 
+                    GrayLevel[0.5]}, ShowStringCharacters -> False]]}, 
+                  AspectRatio -> 1, ImageSize -> 20], #], "Difference"]& ), 
+              TreeElementLabel -> None]}, 
+            Trees`TreeElementShapeFunction -> (Tooltip[
+              Inset[
+               Graphics[{{
+                  GrayLevel[0.85], 
+                  Rectangle[{-1, -1}, {1, 1}, RoundingRadius -> Offset[4]]}, {
+                  GrayLevel[0.5], 
+                  Line[CompressedData["
+1:eJxTTMoPSmViYGAQBmIQbQwGj+0ZoMAorZ97kdMj+8kbc0pbdx+3/9P98u1X
+gfv2S+ZHsmpNuganYeIwdTB9MHNg5kLl98Pkofr3w/RD6f0wc6Hq9sPMhZqz
+H819MPn9aPr3o5m/H83+/Wju24/m/v1o/tuP5v/9AO9QkI8=
+                   "]], 
+                  Style[
+                   GeometricTransformation[
+                    
+                    Line[{{0.25, -0.175}, {0.6, 0.175}, {0.95, -0.175}}], {{{
+                    0.7071067811865475, 
+                    0.7071067811865475}, {-0.7071067811865475, 
+                    0.7071067811865475}}, {0, 0}}], StripOnInput -> False, 
+                   Antialiasing -> False]}}, ImageSize -> 20, PlotRange -> 
+                1], #], 
+              HoldForm[RotationTransform][180 Degree, {1, 0, 0}]]& ), 
+            TreeElementLabel -> None]}, 
+          Trees`TreeElementShapeFunction -> (Tooltip[
+            Inset[
+             Graphics[{{
+                GrayLevel[0.85], 
+                Rectangle[{-1, -1}, {1, 1}, RoundingRadius -> Offset[4]]}, {
+                GrayLevel[0.5], 
+                Line[CompressedData["
+1:eJxTTMoPSmViYGAQBmIQbQwGj+0ZoMAorZ97kdMj+8kbc0pbdx+3/9P98u1X
+gfv2S+ZHsmpNuganYeIwdTB9MHNg5kLl98Pkofr3w/RD6f0wc6Hq9sPMhZqz
+H819MPn9aPr3o5m/H83+/Wju24/m/v1o/tuP5v/9AO9QkI8=
+                 "]], 
+                Style[
+                 GeometricTransformation[
+                  
+                  Line[{{0.25, -0.175}, {0.6, 0.175}, {0.95, -0.175}}], {{{
+                   0.7071067811865475, 
+                   0.7071067811865475}, {-0.7071067811865475, 
+                   0.7071067811865475}}, {0, 0}}], StripOnInput -> False, 
+                 Antialiasing -> False]}}, ImageSize -> 20, PlotRange -> 
+              1], #], 
+            HoldForm[RotationTransform][90 Degree, {0, 0, 1}]]& ), 
+          TreeElementLabel -> None]}, 
+        Trees`TreeElementShapeFunction -> (Tooltip[
+          Inset[
+           Graphics[{{
+              GrayLevel[0.85], 
+              Rectangle[{-1, -1}, {1, 1}, RoundingRadius -> Offset[4]]}, {
+              GrayLevel[0.5], 
+              Line[{{-0.7, 0}, {0.7, 0}}], 
+              Line[{{0.3, -0.4}, {0.7, 0}, {0.3, 0.4}}]}}, ImageSize -> 20, 
+            PlotRange -> 1], #], 
+          HoldForm[TranslationTransform][{0, 0, 16}]]& ), TreeElementLabel -> 
+        None], 
+       Tree["Union", {
+         Tree[
+          Cylinder[{{0, -12, 8}, {0, 12, 8}}, 1.5], {}, 
+          Trees`TreeElementShapeFunction -> (Tooltip[
+            Inset[
+             Graphics3D[{
+               Hue[0.6, 0.2, 0.95], 
+               EdgeForm[None], 
+               Specularity[
+                GrayLevel[0.2], 30], 
+               Cylinder[{{0, -12, 8}, {0, 12, 8}}, 1.5]}, ImageSize -> 20, 
+              Boxed -> False, Lighting -> {{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], #], 
+            Cylinder[{{0, -12, 8}, {0, 12, 8}}, 1.5]]& ), TreeElementLabel -> 
+          None], 
+         Tree[
+          Cylinder[{{-12, 0, 8}, {12, 0, 8}}, 1.5], {}, 
+          Trees`TreeElementShapeFunction -> (Tooltip[
+            Inset[
+             Graphics3D[{
+               Hue[0.6, 0.2, 0.95], 
+               EdgeForm[None], 
+               Specularity[
+                GrayLevel[0.2], 30], 
+               Cylinder[{{-12, 0, 8}, {12, 0, 8}}, 1.5]}, ImageSize -> 20, 
+              Boxed -> False, Lighting -> {{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], #], 
+            Cylinder[{{-12, 0, 8}, {12, 0, 8}}, 1.5]]& ), TreeElementLabel -> 
+          None], 
+         Tree[
+          Ball[{0, 0, 8}, 4], {}, Trees`TreeElementShapeFunction -> (Tooltip[
+            Inset[
+             Graphics3D[{
+               Hue[0.6, 0.2, 0.95], 
+               EdgeForm[None], 
+               Specularity[
+                GrayLevel[0.2], 30], 
+               Ball[{0, 0, 8}, 4]}, ImageSize -> 20, Boxed -> False, 
+              Lighting -> {{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], #], 
+            Ball[{0, 0, 8}, 4]]& ), TreeElementLabel -> None]}, 
+        Trees`TreeElementShapeFunction -> (Tooltip[
+          Inset[
+           Graphics[{
+             GrayLevel[0.85], 
+             Rectangle[{-1, -1}, {1, 1}, RoundingRadius -> Offset[4]], 
+             Text[
+              Style["\[Union]", {FontFamily -> "Times", 11, 
+                GrayLevel[0.5]}, ShowStringCharacters -> False]]}, 
+            AspectRatio -> 1, ImageSize -> 20], #], "Union"]& ), 
+        TreeElementLabel -> None]}, Trees`TreeElementShapeFunction -> (Tooltip[
+        Inset[
+         Graphics[{
+           GrayLevel[0.85], 
+           Rectangle[{-1, -1}, {1, 1}, RoundingRadius -> Offset[4]], 
+           Text[
+            Style["\[Union]", {FontFamily -> "Times", 11, 
+              GrayLevel[0.5]}, ShowStringCharacters -> False]]}, AspectRatio -> 
+          1, ImageSize -> 20], #], "Union"]& ), TreeElementLabel -> None]]}, 
+    NamespaceBox[{
+      {RGBColor[0.6588235294117647, 0.7294117647058823, 0.7058823529411765], 
+       AbsoluteThickness[1], Opacity[0.7], 
+       StyleBox[{
+         LineBox[{{3.1431944670836938`, 3.259609076975682}, {
+          1.3969753187038636`, 2.793950637407727}}], 
+         LineBox[{{3.1431944670836938`, 3.259609076975682}, {
+          3.9580967363276143`, 2.793950637407727}}], 
+         LineBox[{{3.1431944670836938`, 3.259609076975682}, {
+          4.889413615463523, 2.793950637407727}}], 
+         LineBox[{{1.3969753187038636`, 2.793950637407727}, {
+          1.1641460989198864`, 2.328292197839773}}], 
+         LineBox[{{1.3969753187038636`, 2.793950637407727}, {
+          1.629804538487841, 2.328292197839773}}], 
+         LineBox[{{1.629804538487841, 2.328292197839773}, {0., 
+          1.8626337582718182`}}], 
+         LineBox[{{1.629804538487841, 2.328292197839773}, {0.4656584395679545,
+           1.8626337582718182`}}], 
+         LineBox[{{1.629804538487841, 2.328292197839773}, {0.9313168791359091,
+           1.8626337582718182`}}], 
+         LineBox[{{1.629804538487841, 2.328292197839773}, {
+          1.3969753187038636`, 1.8626337582718182`}}], 
+         LineBox[{{1.629804538487841, 2.328292197839773}, {
+          1.8626337582718184`, 1.8626337582718182`}}], 
+         LineBox[{{1.629804538487841, 2.328292197839773}, {2.328292197839773, 
+          1.8626337582718182`}}], 
+         LineBox[{{1.629804538487841, 2.328292197839773}, {2.793950637407727, 
+          1.8626337582718182`}}], 
+         LineBox[{{1.629804538487841, 2.328292197839773}, {3.259609076975682, 
+          1.8626337582718182`}}], 
+         LineBox[{{3.259609076975682, 1.8626337582718182`}, {
+          3.0267798571917046`, 1.3969753187038636`}}], 
+         LineBox[{{3.259609076975682, 1.8626337582718182`}, {
+          3.4924382967596594`, 1.3969753187038636`}}], 
+         LineBox[{{3.9580967363276143`, 2.793950637407727}, {
+          3.9580967363276143`, 2.328292197839773}}], 
+         LineBox[{{3.9580967363276143`, 2.328292197839773}, {
+          3.9580967363276143`, 1.8626337582718182`}}], 
+         LineBox[{{3.9580967363276143`, 1.8626337582718182`}, {
+          3.9580967363276143`, 1.3969753187038636`}}], 
+         LineBox[{{3.9580967363276143`, 1.3969753187038636`}, {
+          3.725267516543637, 0.9313168791359092}}], 
+         LineBox[{{3.9580967363276143`, 1.3969753187038636`}, {
+          4.190925956111592, 0.9313168791359092}}], 
+         LineBox[{{4.190925956111592, 0.9313168791359092}, {
+          2.5611214176237502`, 0.4656584395679544}}], 
+         LineBox[{{4.190925956111592, 0.9313168791359092}, {
+          3.0267798571917046`, 0.4656584395679544}}], 
+         LineBox[{{4.190925956111592, 0.9313168791359092}, {
+          3.4924382967596594`, 0.4656584395679544}}], 
+         LineBox[{{4.190925956111592, 0.9313168791359092}, {
+          3.9580967363276143`, 0.4656584395679544}}], 
+         LineBox[{{4.190925956111592, 0.9313168791359092}, {4.423755175895568,
+           0.4656584395679544}}], 
+         LineBox[{{4.190925956111592, 0.9313168791359092}, {4.889413615463523,
+           0.4656584395679544}}], 
+         LineBox[{{4.190925956111592, 0.9313168791359092}, {5.355072055031478,
+           0.4656584395679544}}], 
+         LineBox[{{4.190925956111592, 0.9313168791359092}, {5.820730494599432,
+           0.4656584395679544}}], 
+         LineBox[{{5.820730494599432, 0.4656584395679544}, {5.587901274815455,
+           0.}}], LineBox[{{5.820730494599432, 0.4656584395679544}, {
+          6.053559714383409, 0.}}], 
+         LineBox[{{4.889413615463523, 2.793950637407727}, {4.423755175895568, 
+          2.328292197839773}}], 
+         LineBox[{{4.889413615463523, 2.793950637407727}, {4.889413615463523, 
+          2.328292197839773}}], 
+         LineBox[{{4.889413615463523, 2.793950637407727}, {5.355072055031478, 
+          2.328292197839773}}]},
+        GraphicsHighlightColor->RGBColor[
+         0.403921568627451, 0.8705882352941177, 0.7176470588235294]]}, 
+      {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+       StyleBox[{
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             GraphicsBox[
+              {GrayLevel[0.85], RectangleBox[{-1, -1}, {1, 1},
+                RoundingRadius->Offset[4]], InsetBox[
+                StyleBox["\<\"\[Union]\"\>",
+                 StripOnInput->False,
+                 ShowStringCharacters->False,
+                 LineColor->GrayLevel[0.5],
+                 FrontFaceColor->GrayLevel[0.5],
+                 BackFaceColor->GrayLevel[0.5],
+                 GraphicsColor->GrayLevel[0.5],
+                 FontFamily->"Times",
+                 FontSize->11,
+                 FontColor->GrayLevel[0.5]], {0, 0}]},
+              AspectRatio->1,
+              ImageSize->20], {3.1431944670836938, 3.259609076975682}],
+            "\"Union\"",
+            TooltipStyle->"TextStyling"],
+           Annotation[#, "Union", "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$1"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             GraphicsBox[
+              {GrayLevel[0.85], RectangleBox[{-1, -1}, {1, 1},
+                RoundingRadius->Offset[4]], InsetBox[
+                StyleBox["\<\"\[Minus]\"\>",
+                 StripOnInput->False,
+                 ShowStringCharacters->False,
+                 LineColor->GrayLevel[0.5],
+                 FrontFaceColor->GrayLevel[0.5],
+                 BackFaceColor->GrayLevel[0.5],
+                 GraphicsColor->GrayLevel[0.5],
+                 FontFamily->"Times",
+                 FontSize->11,
+                 FontColor->GrayLevel[0.5]], {0, 0}]},
+              AspectRatio->1,
+              ImageSize->20], {1.3969753187038636, 2.793950637407727}],
+            "\"Difference\"",
+            TooltipStyle->"TextStyling"],
+           Annotation[#, "Difference", "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$2"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{0, 0, -15}, {0, 0, 15}}, 10]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {1.1641460989198864, 2.328292197839773}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", 
+                    RowBox[{"-", "15"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "15"}], "}"}]}], "}"}], ",", 
+                "10"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{0, 0, -15}, {0, 0, 15}}, 10], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$3"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             GraphicsBox[
+              {GrayLevel[0.85], RectangleBox[{-1, -1}, {1, 1},
+                RoundingRadius->Offset[4]], InsetBox[
+                StyleBox["\<\"\[Union]\"\>",
+                 StripOnInput->False,
+                 ShowStringCharacters->False,
+                 LineColor->GrayLevel[0.5],
+                 FrontFaceColor->GrayLevel[0.5],
+                 BackFaceColor->GrayLevel[0.5],
+                 GraphicsColor->GrayLevel[0.5],
+                 FontFamily->"Times",
+                 FontSize->11,
+                 FontColor->GrayLevel[0.5]], {0, 0}]},
+              AspectRatio->1,
+              ImageSize->20], {1.629804538487841, 2.328292197839773}],
+            "\"Union\"",
+            TooltipStyle->"TextStyling"],
+           Annotation[#, "Union", "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$4"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{-9, -10, 0}, {-9, 10, 0}}, 5]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {0., 1.8626337582718182}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "9"}], ",", 
+                    RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "9"}], ",", "10", ",", "0"}], "}"}]}], "}"}],
+                 ",", "5"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{-9, -10, 0}, {-9, 10, 0}}, 5], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$5"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{9, -10, 0}, {9, 10, 0}}, 5]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {0.4656584395679545, 1.8626337582718182}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"9", ",", 
+                    RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"9", ",", "10", ",", "0"}], "}"}]}], "}"}], ",", 
+                "5"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{9, -10, 0}, {9, 10, 0}}, 5], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$6"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], CuboidBox[{-12, -10, 0}, {-4, 10, 10}]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {0.9313168791359091, 1.8626337582718182}],
+            RowBox[{"Cuboid", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"-", "12"}], ",", 
+                    RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"-", "4"}], ",", "10", ",", "10"}], "}"}]}], 
+              "]"}]],
+           Annotation[#, 
+            Cuboid[{-12, -10, 0}, {-4, 10, 10}], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$7"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], CuboidBox[{12, -10, 0}, {4, 10, 10}]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {1.3969753187038636, 1.8626337582718182}],
+            RowBox[{"Cuboid", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{"12", ",", 
+                    RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+                RowBox[{"{", 
+                  RowBox[{"4", ",", "10", ",", "10"}], "}"}]}], "]"}]],
+           Annotation[#, 
+            Cuboid[{12, -10, 0}, {4, 10, 10}], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$8"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], CylinderBox[{{0, 0, -8}, {0, 0, 16}}, 8]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {1.8626337582718184, 1.8626337582718182}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", 
+                    RowBox[{"-", "8"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "16"}], "}"}]}], "}"}], ",", 
+                "8"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{0, 0, -8}, {0, 0, 16}}, 8], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$9"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{0, 0, -16}, {0, 0, 16}}, 4]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {2.328292197839773, 1.8626337582718182}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", 
+                    RowBox[{"-", "16"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "16"}], "}"}]}], "}"}], ",", 
+                "4"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{0, 0, -16}, {0, 0, 16}}, 4], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$10"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{0, -14, 8}, {0, 14, 8}}, 2]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {2.793950637407727, 1.8626337582718182}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"-", "14"}], ",", "8"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "14", ",", "8"}], "}"}]}], "}"}], ",", 
+                "2"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{0, -14, 8}, {0, 14, 8}}, 2], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$11"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             GraphicsBox[
+              {GrayLevel[0.85], RectangleBox[{-1, -1}, {1, 1},
+                RoundingRadius->Offset[4]], InsetBox[
+                StyleBox["\<\"\[Minus]\"\>",
+                 StripOnInput->False,
+                 ShowStringCharacters->False,
+                 LineColor->GrayLevel[0.5],
+                 FrontFaceColor->GrayLevel[0.5],
+                 BackFaceColor->GrayLevel[0.5],
+                 GraphicsColor->GrayLevel[0.5],
+                 FontFamily->"Times",
+                 FontSize->11,
+                 FontColor->GrayLevel[0.5]], {0, 0}]},
+              AspectRatio->1,
+              ImageSize->20], {3.259609076975682, 1.8626337582718182}],
+            "\"Difference\"",
+            TooltipStyle->"TextStyling"],
+           Annotation[#, "Difference", "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$12"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], CuboidBox[{-11, -12, 8}, {11, 12, 18}]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {3.0267798571917046, 1.3969753187038636}],
+            RowBox[{"Cuboid", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"-", "11"}], ",", 
+                    RowBox[{"-", "12"}], ",", "8"}], "}"}], ",", 
+                RowBox[{"{", 
+                  RowBox[{"11", ",", "12", ",", "18"}], "}"}]}], "]"}]],
+           Annotation[#, 
+            Cuboid[{-11, -12, 8}, {11, 12, 18}], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$13"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{0, -14, 8}, {0, 14, 8}}, 4]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {3.4924382967596594, 1.3969753187038636}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"-", "14"}], ",", "8"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "14", ",", "8"}], "}"}]}], "}"}], ",", 
+                "4"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{0, -14, 8}, {0, 14, 8}}, 4], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$14"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             GraphicsBox[{
+               {GrayLevel[0.85], RectangleBox[{-1, -1}, {1, 1},
+                 RoundingRadius->Offset[4]]}, 
+               {GrayLevel[0.5], LineBox[{{-0.7, 0}, {0.7, 0}}], 
+                LineBox[{{0.3, -0.4}, {0.7, 0}, {0.3, 0.4}}]}},
+              ImageSize->20,
+              PlotRange->1], {3.9580967363276143, 2.793950637407727}],
+            RowBox[{
+              TagBox["TranslationTransform", HoldForm], "[", 
+              RowBox[{"{", 
+                RowBox[{"0", ",", "0", ",", "16"}], "}"}], "]"}]],
+           Annotation[#, 
+            HoldForm[TranslationTransform][{0, 0, 16}], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$15"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             GraphicsBox[{
+               {GrayLevel[0.85], RectangleBox[{-1, -1}, {1, 1},
+                 RoundingRadius->Offset[4]]}, 
+               {GrayLevel[0.5], LineBox[CompressedData["
+1:eJxTTMoPSmViYGAQBmIQbQwGj+0ZoMAorZ97kdMj+8kbc0pbdx+3/9P98u1X
+gfv2S+ZHsmpNuganYeIwdTB9MHNg5kLl98Pkofr3w/RD6f0wc6Hq9sPMhZqz
+H819MPn9aPr3o5m/H83+/Wju24/m/v1o/tuP5v/9AO9QkI8=
+                 "]], 
+                
+                StyleBox[
+                 GeometricTransformationBox[
+                  LineBox[{{0.25, -0.175}, {0.6, 0.175}, {0.95, -0.175}}], {{{
+                   0.7071067811865475, 
+                   0.7071067811865475}, {-0.7071067811865475, 
+                   0.7071067811865475}}, {0, 0}}],
+                 StripOnInput->False,
+                 Antialiasing->False]}},
+              ImageSize->20,
+              PlotRange->1], {3.9580967363276143, 2.328292197839773}],
+            RowBox[{
+              TagBox["RotationTransform", HoldForm], "[", 
+              RowBox[{
+                RowBox[{"90", " ", "\[Degree]"}], ",", 
+                RowBox[{"{", 
+                  RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}]],
+           Annotation[#, 
+            HoldForm[RotationTransform][90 Degree, {0, 0, 1}], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$16"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             GraphicsBox[{
+               {GrayLevel[0.85], RectangleBox[{-1, -1}, {1, 1},
+                 RoundingRadius->Offset[4]]}, 
+               {GrayLevel[0.5], LineBox[CompressedData["
+1:eJxTTMoPSmViYGAQBmIQbQwGj+0ZoMAorZ97kdMj+8kbc0pbdx+3/9P98u1X
+gfv2S+ZHsmpNuganYeIwdTB9MHNg5kLl98Pkofr3w/RD6f0wc6Hq9sPMhZqz
+H819MPn9aPr3o5m/H83+/Wju24/m/v1o/tuP5v/9AO9QkI8=
+                 "]], 
+                
+                StyleBox[
+                 GeometricTransformationBox[
+                  LineBox[{{0.25, -0.175}, {0.6, 0.175}, {0.95, -0.175}}], {{{
+                   0.7071067811865475, 
+                   0.7071067811865475}, {-0.7071067811865475, 
+                   0.7071067811865475}}, {0, 0}}],
+                 StripOnInput->False,
+                 Antialiasing->False]}},
+              ImageSize->20,
+              PlotRange->1], {3.9580967363276143, 1.8626337582718182}],
+            RowBox[{
+              TagBox["RotationTransform", HoldForm], "[", 
+              RowBox[{
+                RowBox[{"180", " ", "\[Degree]"}], ",", 
+                RowBox[{"{", 
+                  RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], "]"}]],
+           Annotation[#, 
+            HoldForm[RotationTransform][180 Degree, {1, 0, 0}], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$17"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             GraphicsBox[
+              {GrayLevel[0.85], RectangleBox[{-1, -1}, {1, 1},
+                RoundingRadius->Offset[4]], InsetBox[
+                StyleBox["\<\"\[Minus]\"\>",
+                 StripOnInput->False,
+                 ShowStringCharacters->False,
+                 LineColor->GrayLevel[0.5],
+                 FrontFaceColor->GrayLevel[0.5],
+                 BackFaceColor->GrayLevel[0.5],
+                 GraphicsColor->GrayLevel[0.5],
+                 FontFamily->"Times",
+                 FontSize->11,
+                 FontColor->GrayLevel[0.5]], {0, 0}]},
+              AspectRatio->1,
+              ImageSize->20], {3.9580967363276143, 1.3969753187038636}],
+            "\"Difference\"",
+            TooltipStyle->"TextStyling"],
+           Annotation[#, "Difference", "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$18"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{0, 0, -15}, {0, 0, 15}}, 10]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {3.725267516543637, 0.9313168791359092}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", 
+                    RowBox[{"-", "15"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "15"}], "}"}]}], "}"}], ",", 
+                "10"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{0, 0, -15}, {0, 0, 15}}, 10], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$19"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             GraphicsBox[
+              {GrayLevel[0.85], RectangleBox[{-1, -1}, {1, 1},
+                RoundingRadius->Offset[4]], InsetBox[
+                StyleBox["\<\"\[Union]\"\>",
+                 StripOnInput->False,
+                 ShowStringCharacters->False,
+                 LineColor->GrayLevel[0.5],
+                 FrontFaceColor->GrayLevel[0.5],
+                 BackFaceColor->GrayLevel[0.5],
+                 GraphicsColor->GrayLevel[0.5],
+                 FontFamily->"Times",
+                 FontSize->11,
+                 FontColor->GrayLevel[0.5]], {0, 0}]},
+              AspectRatio->1,
+              ImageSize->20], {4.190925956111592, 0.9313168791359092}],
+            "\"Union\"",
+            TooltipStyle->"TextStyling"],
+           Annotation[#, "Union", "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$20"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{-9, -10, 0}, {-9, 10, 0}}, 5]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {2.5611214176237502, 0.4656584395679544}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "9"}], ",", 
+                    RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "9"}], ",", "10", ",", "0"}], "}"}]}], "}"}],
+                 ",", "5"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{-9, -10, 0}, {-9, 10, 0}}, 5], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$21"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{9, -10, 0}, {9, 10, 0}}, 5]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {3.0267798571917046, 0.4656584395679544}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"9", ",", 
+                    RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"9", ",", "10", ",", "0"}], "}"}]}], "}"}], ",", 
+                "5"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{9, -10, 0}, {9, 10, 0}}, 5], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$22"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], CuboidBox[{-12, -10, 0}, {-4, 10, 10}]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {3.4924382967596594, 0.4656584395679544}],
+            RowBox[{"Cuboid", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"-", "12"}], ",", 
+                    RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"-", "4"}], ",", "10", ",", "10"}], "}"}]}], 
+              "]"}]],
+           Annotation[#, 
+            Cuboid[{-12, -10, 0}, {-4, 10, 10}], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$23"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], CuboidBox[{12, -10, 0}, {4, 10, 10}]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {3.9580967363276143, 0.4656584395679544}],
+            RowBox[{"Cuboid", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{"12", ",", 
+                    RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+                RowBox[{"{", 
+                  RowBox[{"4", ",", "10", ",", "10"}], "}"}]}], "]"}]],
+           Annotation[#, 
+            Cuboid[{12, -10, 0}, {4, 10, 10}], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$24"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], CylinderBox[{{0, 0, -8}, {0, 0, 16}}, 8]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {4.423755175895568, 0.4656584395679544}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", 
+                    RowBox[{"-", "8"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "16"}], "}"}]}], "}"}], ",", 
+                "8"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{0, 0, -8}, {0, 0, 16}}, 8], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$25"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{0, 0, -16}, {0, 0, 16}}, 4]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {4.889413615463523, 0.4656584395679544}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", 
+                    RowBox[{"-", "16"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "16"}], "}"}]}], "}"}], ",", 
+                "4"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{0, 0, -16}, {0, 0, 16}}, 4], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$26"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{0, -14, 8}, {0, 14, 8}}, 2]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {5.355072055031478, 0.4656584395679544}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"-", "14"}], ",", "8"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "14", ",", "8"}], "}"}]}], "}"}], ",", 
+                "2"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{0, -14, 8}, {0, 14, 8}}, 2], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$27"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             GraphicsBox[
+              {GrayLevel[0.85], RectangleBox[{-1, -1}, {1, 1},
+                RoundingRadius->Offset[4]], InsetBox[
+                StyleBox["\<\"\[Minus]\"\>",
+                 StripOnInput->False,
+                 ShowStringCharacters->False,
+                 LineColor->GrayLevel[0.5],
+                 FrontFaceColor->GrayLevel[0.5],
+                 BackFaceColor->GrayLevel[0.5],
+                 GraphicsColor->GrayLevel[0.5],
+                 FontFamily->"Times",
+                 FontSize->11,
+                 FontColor->GrayLevel[0.5]], {0, 0}]},
+              AspectRatio->1,
+              ImageSize->20], {5.820730494599432, 0.4656584395679544}],
+            "\"Difference\"",
+            TooltipStyle->"TextStyling"],
+           Annotation[#, "Difference", "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$28"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], CuboidBox[{-11, -12, 8}, {11, 12, 18}]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {5.587901274815455, 0.}],
+            RowBox[{"Cuboid", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"-", "11"}], ",", 
+                    RowBox[{"-", "12"}], ",", "8"}], "}"}], ",", 
+                RowBox[{"{", 
+                  RowBox[{"11", ",", "12", ",", "18"}], "}"}]}], "]"}]],
+           Annotation[#, 
+            Cuboid[{-11, -12, 8}, {11, 12, 18}], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$29"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{0, -14, 8}, {0, 14, 8}}, 4]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {6.053559714383409, 0.}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"-", "14"}], ",", "8"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "14", ",", "8"}], "}"}]}], "}"}], ",", 
+                "4"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{0, -14, 8}, {0, 14, 8}}, 4], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$30"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             GraphicsBox[
+              {GrayLevel[0.85], RectangleBox[{-1, -1}, {1, 1},
+                RoundingRadius->Offset[4]], InsetBox[
+                StyleBox["\<\"\[Union]\"\>",
+                 StripOnInput->False,
+                 ShowStringCharacters->False,
+                 LineColor->GrayLevel[0.5],
+                 FrontFaceColor->GrayLevel[0.5],
+                 BackFaceColor->GrayLevel[0.5],
+                 GraphicsColor->GrayLevel[0.5],
+                 FontFamily->"Times",
+                 FontSize->11,
+                 FontColor->GrayLevel[0.5]], {0, 0}]},
+              AspectRatio->1,
+              ImageSize->20], {4.889413615463523, 2.793950637407727}],
+            "\"Union\"",
+            TooltipStyle->"TextStyling"],
+           Annotation[#, "Union", "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$31"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{0, -12, 8}, {0, 12, 8}}, 1.5]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {4.423755175895568, 2.328292197839773}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"-", "12"}], ",", "8"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "12", ",", "8"}], "}"}]}], "}"}], ",", 
+                "1.5`"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{0, -12, 8}, {0, 12, 8}}, 1.5], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$32"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               CylinderBox[{{-12, 0, 8}, {12, 0, 8}}, 1.5]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {4.889413615463523, 2.328292197839773}],
+            RowBox[{"Cylinder", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "12"}], ",", "0", ",", "8"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"12", ",", "0", ",", "8"}], "}"}]}], "}"}], ",", 
+                "1.5`"}], "]"}]],
+           Annotation[#, 
+            Cylinder[{{-12, 0, 8}, {12, 0, 8}}, 1.5], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$33"], 
+         TagBox[
+          TagBox[
+           TooltipBox[InsetBox[
+             Graphics3DBox[
+              {Hue[0.6, 0.2, 0.95], EdgeForm[None], Specularity[
+                GrayLevel[0.2], 30], 
+               TagBox[SphereBox[{0, 0, 8}, 4],
+                "Ball"]},
+              Boxed->False,
+              ImageSize->20,
+              Lighting->{{"Ambient", 
+                 GrayLevel[0.45]}, {"Directional", 
+                 GrayLevel[0.3], 
+                 ImageScaled[{2, 0, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{2, 2, 2}]}, {"Directional", 
+                 GrayLevel[0.25], 
+                 ImageScaled[{0, 2, 2}]}}], {5.355072055031478, 2.328292197839773}],
+            RowBox[{"Ball", "[", 
+              RowBox[{
+                RowBox[{"{", 
+                  RowBox[{"0", ",", "0", ",", "8"}], "}"}], ",", "4"}], "]"}]],
+           Annotation[#, 
+            Ball[{0, 0, 8}, 4], "Tooltip"]& ],
+          "DynamicName",
+          BoxID -> "VertexID$34"]},
+        GraphicsHighlightColor->RGBColor[
+         0.403921568627451, 0.8705882352941177, 0.7176470588235294]]}}]]],
+  AlignmentPoint->Center,
+  Axes->False,
+  AxesLabel->None,
+  AxesOrigin->Automatic,
+  AxesStyle->{},
+  Background->None,
+  BaseStyle->Directive[
+   FrontEnd`GraphicsHighlightColor -> 
+    RGBColor[0.403921568627451, 0.8705882352941177, 0.7176470588235294]],
+  BaselinePosition->Automatic,
+  ContentSelectable->Automatic,
+  Epilog->{},
+  FormatType->StandardForm,
+  Frame->False,
+  FrameLabel->FormBox["False", StandardForm],
+  FrameStyle->{},
+  FrameTicks->None,
+  FrameTicksStyle->{},
+  GridLines->None,
+  GridLinesStyle->{},
+  ImageMargins->0.,
+  ImagePadding->All,
+  ImageSize->Automatic,
+  LabelStyle->{},
+  PlotLabel->None,
+  PlotRange->All,
+  PlotRangeClipping->False,
+  PlotRangePadding->Automatic,
+  PlotRegion->Automatic,
+  Prolog->{},
+  RotateLabel->True,
+  Ticks->Automatic,
+  TicksStyle->{}]], "Output",
+ CellChangeTimes->{{3.8621320037130747`*^9, 3.862132027211834*^9}},
+ CellLabel->
+  "Out[152]=",ExpressionUUID->"1db6cc92-d295-4f28-8249-ca2e983b9651"]
+}, Open  ]]
+},
+WindowSize->{1140, 573},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"cb45344a-4ebb-40b9-9a75-20c86e896638"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3914, 111, 105, "Input",ExpressionUUID->"83fe3dfb-0562-4d1e-ab4b-ca5c7b01ade8"],
+Cell[4497, 135, 73309, 1230, 449, 22171, 391, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"54e71cb4-05ae-4a00-ad04-4904d4baac6c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[77843, 1370, 1878, 51, 67, "Input",ExpressionUUID->"cb8c3b81-027a-4bfd-9b4c-52991aae35cb"],
+Cell[79724, 1423, 72695, 1683, 220, "Output",ExpressionUUID->"1db6cc92-d295-4f28-8249-ca2e983b9651"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
